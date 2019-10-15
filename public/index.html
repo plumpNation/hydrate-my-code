@@ -29,9 +29,16 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
-    <section id="hydrate-me">
-      <h1>Boom</h1>
-    </section>
+    <!--
+      The hydrator expects the whitespace to be non existent, which is fun,
+      and for the <button> to be present. However, it still works!
+    -->
+    <div id="hydrate-me">
+      <section>
+        <h1>Boom</h1>
+        <a href="#">link</a>
+      </section>
+    </div>
 
     <div id="root"></div>
     <!--
